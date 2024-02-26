@@ -1,0 +1,26 @@
+CREATE SCHEMA IF NOT EXISTS `CRUD` DEFAULT CHARACTER SET utf8 ;
+USE `CRUD` ;
+
+-- -----------------------------------------------------
+-- Table `CRUD`.`User`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `CRUD`.`User` (
+  `id_user` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(70) NOT NULL,
+  `email` VARCHAR(70) NOT NULL,
+  `password` VARCHAR(150) NOT NULL,
+  PRIMARY KEY (`id_user`),
+  UNIQUE INDEX `id_user_UNIQUE` (`id_user`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Produto`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `CRUD`.`Produto` (
+  `ID` INT NOT NULL AUTO_INCREMENT,
+  `Nome` VARCHAR(60) NOT NULL,
+  `Descrição` VARCHAR(150) NOT NULL,
+  `Preço` DECIMAL NULL,
+  PRIMARY KEY (`ID`))
+ENGINE = InnoDB;
