@@ -29,7 +29,7 @@ Para executar a aplicação localmente, siga os passos abaixo:
 
 ```
   Crie um banco de dados SQL e guarde as seguintes informações: host, porta, database, user e a senha.
-  Vá até a pasta backend/database e configure o arquivo database.py de acordo com as informações guardadas acima.
+  Vá até a pasta backend/model e configure o arquivo database.py de acordo com as informações guardadas acima.
   Informações ncessárias: 
   host= Host do seu Banco de Dados
   user= Username do seu Usuário de Banco de Dados
@@ -39,7 +39,7 @@ Para executar a aplicação localmente, siga os passos abaixo:
 
 3. Crie as tabelas e insira os dados:
 ```
-  Ainda na pasta database copie o script do arquivo "db.txt" e execute o script no seu banco de dados recém criado.
+  Ainda na pasta model copie o script do arquivo "db.txt" e execute o script no seu banco de dados recém criado.
 ```
 
 
@@ -47,3 +47,15 @@ Para executar a aplicação localmente, siga os passos abaixo:
 ```
   python app.py
 ```
+
+## 🎥🎥 Vídeo demonstrativo das funcionalidades 
+```
+  [python app.py](https://drive.google.com/file/d/12ER1bniYG3GI6bxhik7fY8o1Pj1vF9Hg/view?usp=sharing)
+```
+
+## 📖 Licença
+
+MIT: [LICENSE](https://github.com/WendelGustavo/CRUD-Python/blob/main/LICENSE)
+
+
+
