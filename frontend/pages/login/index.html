@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/frontend/pages/login/index.js"></script>
+  </head>
+  <body>
+    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+      <div class="container">
+        <div class="card login-card">
+          <div class="row no-gutters">
+            <div
+              class="col-md-5 text-center d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="https://static.wixstatic.com/media/b6c7e5_b6d43044bb344d83bb6a97a6875ea924~mv2.png/v1/crop/x_26,y_122,w_400,h_196/fill/w_112,h_55,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Nova%20Logo%20-%20s4.png"
+                alt="login"
+                class="login-card-img"
+              />
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <p class="login-card-description">Entre na sua conta!</p>
+                <div class="form-group">
+                <form>
+                  <label for="email" class="sr-only">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Endereço email"
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="password" class="sr-only">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control"
+                    placeholder="***********"
+                  />
+                </div>
+                <input
+                  name="login"
+                  id="login"
+                  class="btn btn-block login-btn mb-4 bg-color-background"
+                  style="background-color: #fd7203; color: white"
+                  value="Login"
+                  type="button"
+                />
+                <p class="login-card-footer-text">
+                  Ainda não possui conta?
+                  <a href="/register" class="text-reset color-text">Registre-se aqui!</a
+                  >
+                </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
