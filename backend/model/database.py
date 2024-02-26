@@ -1,30 +1,4 @@
-from sqlalchemy import create_engine, MetaData
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy import text
-from sqlalchemy.pool import QueuePool
 import aiomysql
-
-# Configuração do banco de dados SQLite
-DATABASE_URL = 'mysql://root:@localhost/CRUD'
-engine = create_engine(DATABASE_URL, poolclass=QueuePool)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
-metadata = MetaData()
-
-def get_db():
-    """
-    Função que retorna uma sessão do banco de dados.
-
-    Returns:
-        db (SessionLocal): A sessão do banco de dados.
-    """
-
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 async def query(query_param, values=None):
     """

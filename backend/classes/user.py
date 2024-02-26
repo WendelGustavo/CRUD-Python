@@ -7,12 +7,7 @@ class User:
     """
     Classe que representa a tabela de usuários no banco de dados.
 
-    Args:
-        Base (Base): A classe base do SQLAlchemy.
-
     """
-
-
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     username = Column(String(100), unique=True, nullable=False)

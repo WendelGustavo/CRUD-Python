@@ -11,6 +11,7 @@ def auth_middleware(request):
     Returns:
         Response: A resposta de sucesso ou falha da verificação do token.
     """
+
     if not request.is_json:
         return jsonify({'message': 'O corpo da requisição não é um JSON!'}), 400
     if request.headers.get('Authorization') is None or request.headers.get('idUser') is None:

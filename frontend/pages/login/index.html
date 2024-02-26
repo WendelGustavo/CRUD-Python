@@ -22,7 +22,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/frontend/pages/login/index.js"></script>
   </head>
   <body>
     <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
@@ -81,6 +80,67 @@
           </div>
         </div>
       </div>
+      <script> 
+      if (localStorage.getItem('token') !== null && localStorage.getItem('id_user') !== null) {
+        window.location.href = '/home';
+      }
+
+  
+  document.getElementById('login').addEventListener('click', async function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email')?.value;
+        let password = document.getElementById('password')?.value;
+
+        if (!email || !password || email === '' || password === '') {
+          Swal.fire({
+            title: "Aviso!",
+            text: "Preencha todos os campos!",
+            icon: "warning",
+          });
+            return;
+        }
+
+        password = btoa(password);
+
+        const loginData = {
+            email: email,
+            password: password
+        };
+
+        await fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(loginData)
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (!data.status) {
+            Swal.fire({
+              title: "Aviso!",
+              text: data.message,
+              icon: "error",
+            });
+          } else {
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('id_user', data.id);
+            Swal.fire({
+              title: "Sucesso!",
+              text: data.message,
+              icon: "success",
+            });
+
+            setTimeout(() => {
+              window.location.href = '/home';
+            }, 2000);
+          }
+        })
+        .catch(error => {
+            console.log('Error:', error);
+        });
+    });
+      </script>
     </main>
   </body>
 </html>
