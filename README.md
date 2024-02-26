@@ -54,6 +54,7 @@ Para executar a aplicação localmente, siga os passos abaixo:
 ```
   python app.py
 ```
+6. Abra a aplicação no host inforamado no terminal
 
 ## 🎥 Vídeo demonstrativo das funcionalidades 
   [Vídeo](https://drive.google.com/file/d/12ER1bniYG3GI6bxhik7fY8o1Pj1vF9Hg/view?usp=sharing)
