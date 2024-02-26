@@ -9,10 +9,10 @@ Aplicação web simples utilizando Python com o framework Flask, que permite aos
 Neste teste, foi implementado as seguintes funcionalidades de acordo com os requisitos:
 
 ### Funcionalidades
-- Exibição de todos os produtos cadastrados.
-- Opção de editar, remover e adicionar novos Produtos.
-- Implementação de sistema de autenticação do usuario com JWT
-- Middleware responsável por garantir veracidade das informações enviadas pelos usuários.
+- [x] Exibição de todos os produtos cadastrados.
+- [x] Opção de editar, remover e adicionar novos Produtos.
+- [x] Implementação de sistema de autenticação do usuario com JWT
+- [x] Middleware responsável por garantir veracidade das informações enviadas pelos usuários.
 
 ### Estrutura Base do projeto
 
@@ -80,7 +80,7 @@ Para executar a aplicação localmente, siga os passos abaixo:
 
 ## 📖 Licença
 
-MIT: [LICENSE](https://github.com/WendelGustavo/CRUD-Python/blob/main/LICENSE)
+Esse projeto está sob a licença (nome da licença) - acesse os detalhes [LICENSE.md](https://github.com/WendelGustavo/CRUD-Python/blob/main/LICENSE).
 
 
 
