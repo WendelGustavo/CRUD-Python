@@ -22,9 +22,17 @@ Para executar a aplicação localmente, siga os passos abaixo:
 
 ```
   git clone https://github.com/WendelGustavo/CRUD-Python
-  cd backend
 ```
 
+1.1  Instale as dependencias base
+```
+  pip install -r requirements.txt
+```
+
+1.2 Acesse a pasta Backend
+```
+  cd backend
+```
 2. Crie um banco de dados no MySQL:
 
 ```
