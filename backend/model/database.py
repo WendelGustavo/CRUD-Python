@@ -10,7 +10,7 @@ async def query(query_param, values=None):
     Returns:
         result: O resultado da query.
     """
-    async with aiomysql.connect(host='localhost', user='root', password='', db='CRUD') as conn:
+    async with aiomysql.connect(host='', user='', password='', db='') as conn:
         async with conn.cursor() as cursor:
             # Executar a query
             if values is None:

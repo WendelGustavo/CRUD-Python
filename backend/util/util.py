@@ -38,4 +38,3 @@ def check_auth_token(token, id_user):
         return False
     except jwt.ExpiredSignatureError:
         return False
-
