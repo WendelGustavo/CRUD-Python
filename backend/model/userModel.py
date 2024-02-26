@@ -1,5 +1,4 @@
 from model.database import query
-import asyncio
 
 async def get_info_user_by_email(email):
     """

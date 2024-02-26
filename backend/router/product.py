@@ -1,6 +1,5 @@
 from flask import Blueprint, jsonify, request
 from classes.produto import Product
-import asyncio
 
 
 # Criar um Blueprint para o roteador
