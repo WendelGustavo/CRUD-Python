@@ -14,6 +14,25 @@ Neste teste, foi implementado as seguintes funcionalidades de acordo com os requ
 - Implementação de sistema de autenticação do usuario com JWT
 - Middleware responsável por garantir veracidade das informações enviadas pelos usuários.
 
+### Estrutura Base do projeto
+
+```
+/backend               -> Pasta contendo o código do lado do servidor.
+    |__classes         -> Pasta contendo as Classes necessarias do backend.
+    |__middleware      -> Middleware para processamento intermediário das requisições e vaidação de usuário.
+    |__model           -> Pasta contendo configuração e comunicação com o banco de dados.
+    |__router          -> Roteadores para direcionar solicitações.
+    |__util            -> Pasta contendo utilitários diversos.
+    app.py             -> Arquivo principal de inicialização do servidor.
+
+/frontend              -> Pasta contendo o código do lado do cliente.
+    |__pages           -> Páginas HTML.
+    |__styles          -> Estilos CSS.
+    
+requirements.txt       -> Arquivo que carrega as dependências necessárias do projeto.
+```
+
+
 ## ⚙️ Como executar o projeto
 
 Para executar a aplicação localmente, siga os passos abaixo:
