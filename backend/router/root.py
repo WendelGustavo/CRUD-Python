@@ -21,7 +21,7 @@ def index():
     return send_from_directory(frontend_dir, 'index.html')
 
 # Rota para a página "about"
-@router.route('/about')
+@router.route('/about/info')
 def get_about():
     """
     Retorna informações referentes a versão e descrição da aplicação. Utilizada para controle de versão e documentação.
@@ -30,10 +30,15 @@ def get_about():
         name (str): O nome da aplicação.
         version (str): A versão da aplicação.
         description (str): A descrição da aplicação.
+        license (str): A licença da aplicação.
+        repository (str): O repositório da aplicação.
+
 
     """
 
     return jsonify({ "name": "CRUD - Aplicação web simples utilizando Python com o framework Flask",
                     "version": "1.0.0", 
-                    "Description": "Aplicação web simples utilizando Python com o framework Flask, que permite aos usuários criar, visualizar, editar e deletar registros de uma entidade específica em um banco de dados MySQL. A aplicação também deve ter uma interface básica utilizando HTML/CSS." 
+                    "Description": "Aplicação web simples utilizando Python com o framework Flask, que permite aos usuários criar, visualizar, editar e deletar registros de uma entidade específica em um banco de dados MySQL. A aplicação também deve ter uma interface básica utilizando HTML/CSS." ,
+                    "License": "https://github.com/WendelGustavo/CRUD-Python/blob/main/LICENSE",
+                    "repository": "https://github.com/WendelGustavo/CRUD-Python",
                     }), 200
