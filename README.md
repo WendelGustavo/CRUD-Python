@@ -42,16 +42,13 @@ Para executar a aplicação localmente, siga os passos abaixo:
   Ainda na pasta model copie o script do arquivo "db.txt" e execute o script no seu banco de dados recém criado.
 ```
 
-
 5. Inicie a aplicação
 ```
   python app.py
 ```
 
-## 🎥🎥 Vídeo demonstrativo das funcionalidades 
-```
+## 🎥 Vídeo demonstrativo das funcionalidades 
   [python app.py](https://drive.google.com/file/d/12ER1bniYG3GI6bxhik7fY8o1Pj1vF9Hg/view?usp=sharing)
-```
 
 ## 📖 Licença
 
