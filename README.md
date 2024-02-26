@@ -48,7 +48,7 @@ Para executar a aplicação localmente, siga os passos abaixo:
 ```
 
 ## 🎥 Vídeo demonstrativo das funcionalidades 
-  [python app.py](https://drive.google.com/file/d/12ER1bniYG3GI6bxhik7fY8o1Pj1vF9Hg/view?usp=sharing)
+  [Vídeo](https://drive.google.com/file/d/12ER1bniYG3GI6bxhik7fY8o1Pj1vF9Hg/view?usp=sharing)
 
 ## 📖 Licença
 
